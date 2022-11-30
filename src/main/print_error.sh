@@ -5,11 +5,11 @@
 # Description:  A unified error function
 
 # ENV
-NAME="$(basename "$0")"
+script_name="$(basename "$0")"
 
 print_error(){
 	message="$1"
-	echo "${NAME} - Error: ${message}" >&2
+	echo "${script_name} - Error: ${message}" >&2
 }
 
 # Usage
